@@ -2,5 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("Rango says hey there partner!")
+    context_dict={'boldmessage':'Crunchy, creamy, cookie, candy, cupcake!'}
+    return render(request, 'rango/index.html', context=context_dict)
 
+def about(request):
+    context_dict = {'boldmessage': 'Crunchy cupcake!'}
+    return render(request, 'rango/about.html', context=context_dict)
+
+def page(request):
+    context_dict = {'boldmessage': 'WONDERFUL'}
+    return render(request, 'rango/page.html', context=context_dict)

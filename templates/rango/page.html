@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <title>Rango Page</title>
+</head>
+<body>
+    <h1>Rango says...</h1>
+        <div>
+            Hello! <br />
+            <strong>{{boldmessage}}</strong><br /> world!
+            <img src="{% static 'images/cat.jpg' %}"/>
+            <img src="{{ MEDIA_URL }} dog.jpg" alt="Picture of dog" />
+        </div>
+</body>
+</html>
