@@ -6,9 +6,6 @@ def index(request):
     return render(request, 'rango/index.html', context=context_dict)
 
 def about(request):
-    context_dict = {'boldmessage': 'Crunchy cupcake!'}
+    context_dict = {'boldmessage': 'Khantushig'}
     return render(request, 'rango/about.html', context=context_dict)
 
-def page(request):
-    context_dict = {'boldmessage': 'WONDERFUL'}
-    return render(request, 'rango/page.html', context=context_dict)
